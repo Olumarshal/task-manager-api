@@ -7,6 +7,7 @@ const CONNECTION_URI = process.env.CONNECTION_URI
 function connectToDB() {
     mongoose.connect(CONNECTION_URI, {
         useNewUrlParser: true,
+        useFindAndModify: false,
         useUnifiedTopology: true,
       });
     
